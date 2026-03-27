@@ -3,7 +3,7 @@ import React from "react";
 export default function Lsb() {
   return (
     <div className="left-sidebar">
-      <img className="me" src="./assets/images/yazeed-pic.jpeg" alt="Abdulwahab Mahmoud" />
+      <img className="me" src="./assets/images/Abdulwahab.jpeg" alt="Abdulwahab Mahmoud" />
       <div className="designation-wrap">
         <span className="designation-badge">Senior Frontend Engineer</span>
       </div>
