@@ -20,7 +20,7 @@ export const portfolioProjects = [
     description:
       "Full e-commerce experience for electronics and consumer products: listings, categories, product detail, search, cart, and responsive checkout—plus an admin dashboard for products, categories, orders, and users with authentication and order management. Emphasis on performance, reusable UI, and a scalable architecture.",
     tags: ["React.js", "E-commerce", "REST APIs"],
-    projectUrl: "",
+    projectUrl: "https://jiovani-marketer.vercel.app/",
   },
   {
     id: "fitlab",
@@ -33,7 +33,7 @@ export const portfolioProjects = [
     description:
       "Revamped healthy meal-plan platform for a smoother end-to-end experience. Built a scalable, high-performance web app with responsive, accessible UI, optimized load times, dynamic interactions, and API integrations for personalized plans and timely updates.",
     tags: ["React", "Redux", "Vite"],
-    projectUrl: "",
+    projectUrl: "https://fitlab-me.com/",
   },
   {
     id: "swft-op",
@@ -46,7 +46,7 @@ export const portfolioProjects = [
     description:
       "First desktop demo of the company’s fintech product for partners and stakeholders: high-fidelity UI on the Swft OP design system and Chakra UI, financial charts with Recharts, and guided workflows using Formik and Yup.",
     tags: ["Chakra UI", "Recharts", "Formik"],
-    projectUrl: "",
+    projectUrl: "https://demo.swftmoney.com/",
   },
   {
     id: "hojuzat",
