@@ -2,9 +2,7 @@
  * Portfolio project images
  * ------------------------
  * imageUrl: رابط كامل (https) أو مسار من public مثل /assets/...
- *
- * الروابط الحالية: صور توضيحية من Unsplash حسب طبيعة كل مشروع —
- * استبدلها بلقطات شاشة حقيقية من المنتج عندما تتوفر.
+ * projectUrl: رابط المشروع المباشر؛ إن وُجد يفتح في تاب جديد عند الضغط على العنوان أو الصورة.
  */
 
 const u = (id, params = "auto=format&fit=crop&w=1200&q=80") =>
@@ -22,6 +20,7 @@ export const portfolioProjects = [
     description:
       "Full e-commerce experience for electronics and consumer products: listings, categories, product detail, search, cart, and responsive checkout—plus an admin dashboard for products, categories, orders, and users with authentication and order management. Emphasis on performance, reusable UI, and a scalable architecture.",
     tags: ["React.js", "E-commerce", "REST APIs"],
+    projectUrl: "",
   },
   {
     id: "fitlab",
@@ -34,6 +33,7 @@ export const portfolioProjects = [
     description:
       "Revamped healthy meal-plan platform for a smoother end-to-end experience. Built a scalable, high-performance web app with responsive, accessible UI, optimized load times, dynamic interactions, and API integrations for personalized plans and timely updates.",
     tags: ["React", "Redux", "Vite"],
+    projectUrl: "",
   },
   {
     id: "swft-op",
@@ -46,6 +46,7 @@ export const portfolioProjects = [
     description:
       "First desktop demo of the company’s fintech product for partners and stakeholders: high-fidelity UI on the Swft OP design system and Chakra UI, financial charts with Recharts, and guided workflows using Formik and Yup.",
     tags: ["Chakra UI", "Recharts", "Formik"],
+    projectUrl: "",
   },
   {
     id: "hojuzat",
@@ -58,6 +59,7 @@ export const portfolioProjects = [
     description:
       "Scalable travel booking platform to search, compare, and book hotels and packages worldwide—dynamic search and filtering, responsive high-performance UI, secure booking-oriented flows, and modular components to grow the product.",
     tags: ["Next.js", "Travel"],
+    projectUrl: "https://hojuzat.com/ar",
   },
   {
     id: "golden-host",
@@ -70,6 +72,7 @@ export const portfolioProjects = [
     description:
       "Marketplace for booking private accommodations—apartments, villas, and chalets—across Saudi Arabia, with advanced search and filtering and a responsive UI focused on browsing and booking.",
     tags: ["Next.js", "Marketplace"],
+    projectUrl: "https://goldenhost.co",
   },
   {
     id: "cardnet",
@@ -78,10 +81,11 @@ export const portfolioProjects = [
     aos: "fade-left",
     imageUrl: u("photo-1556742502-ec7c0e9f34b1"),
     imageAlt: "CardNet digital commerce platform",
-    title: "CardNet — Scalable Digital Commerce Platform",
+    title: "CardNet — Digital Cards & E-Commerce Platform",
     description:
       "Multi-category commerce for digital cards and tech products with secure flows; rich product discovery with search, categories, and filters; fast modular checkout; structured purchase paths for instant digital delivery; architecture geared toward merchant and POS integrations.",
     tags: ["React.js", "E-commerce"],
+    projectUrl: "https://cardnet.sa/ar",
   },
   {
     id: "king-khalid-foundation",
@@ -95,6 +99,7 @@ export const portfolioProjects = [
     description:
       "Scalable, content-rich platform for programs, research, and initiatives—structured content for discoverability, modular UI, performance for high-volume pages, and polished informational and interactive journeys including forms and engagement touchpoints.",
     tags: ["Next.js", "Enterprise"],
+    projectUrl: "https://www.kkf.org.sa",
   },
   {
     id: "zr3i",
@@ -107,5 +112,6 @@ export const portfolioProjects = [
     description:
       "Data-driven SaaS combining AI and satellite analytics for precision agriculture—scalable UI for crop monitoring, land analysis, and environmental metrics; strong UX for heavy data workflows; frontend aligned with GIS, remote sensing, and analytics integrations.",
     tags: ["Next.js", "SaaS", "Data"],
+    projectUrl: "https://www.zr3i.com/",
   },
 ];

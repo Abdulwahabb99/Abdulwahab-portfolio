@@ -1119,6 +1119,15 @@ body .body-overlay {
 .portfolio-items .portfolio-item:hover h2 a {
   border-color: #ffffff;
 }
+.portfolio-items .portfolio-item h2 .portfolio-title-text {
+  color: #fff;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+.portfolio-items .portfolio-item:hover h2 .portfolio-title-text {
+  border-color: #ffffff;
+}
 .portfolio-items .portfolio-item .portfolio-desc {
   font-size: 14px;
   color: #999;

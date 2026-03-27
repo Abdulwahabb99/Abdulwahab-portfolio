@@ -46,6 +46,26 @@ export default function Portfolio() {
           <div className="row portfolio-items">
             {portfolioProjects.map((project) => {
               const imgSrc = projectImageSrc(project.imageUrl);
+              const siteUrl =
+                project.projectUrl && String(project.projectUrl).trim()
+                  ? String(project.projectUrl).trim()
+                  : "";
+
+              const imageWrap = siteUrl ? (
+                <a
+                  href={siteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${project.title} — open website`}
+                >
+                  <img src={imgSrc} alt={project.imageAlt} loading="lazy" />
+                </a>
+              ) : (
+                <a href={imgSrc} data-lightbox="example-1">
+                  <img src={imgSrc} alt={project.imageAlt} loading="lazy" />
+                </a>
+              );
+
               return (
                 <div
                   key={project.id}
@@ -54,9 +74,7 @@ export default function Portfolio() {
                 >
                   <div className={`portfolio-item ${project.itemVariant}`}>
                     <div className="portfolio-item-inner">
-                      <a href={imgSrc} data-lightbox="example-1">
-                        <img src={imgSrc} alt={project.imageAlt} loading="lazy" />
-                      </a>
+                      {imageWrap}
                       <ul className="portfolio-categories">
                         {project.tags.map((tag) => (
                           <li key={tag}>
@@ -66,7 +84,19 @@ export default function Portfolio() {
                       </ul>
                     </div>
                     <h2>
-                      <a href="#">{project.title}</a>
+                      {siteUrl ? (
+                        <a
+                          href={siteUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {project.title}
+                        </a>
+                      ) : (
+                        <span className="portfolio-title-text">
+                          {project.title}
+                        </span>
+                      )}
                     </h2>
                     <p className="portfolio-desc">{project.description}</p>
                   </div>
