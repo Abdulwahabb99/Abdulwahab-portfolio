@@ -53,15 +53,20 @@ export default function Portfolio() {
 
               const imageWrap = siteUrl ? (
                 <a
+                  className="portfolio-thumb-link portfolio-thumb-link--external"
                   href={siteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`${project.title} — open website`}
+                  aria-label={`${project.title} — open website in new tab`}
                 >
                   <img src={imgSrc} alt={project.imageAlt} loading="lazy" />
                 </a>
               ) : (
-                <a href={imgSrc} data-lightbox="example-1">
+                <a
+                  className="portfolio-thumb-link"
+                  href={imgSrc}
+                  data-lightbox="portfolio-gallery"
+                >
                   <img src={imgSrc} alt={project.imageAlt} loading="lazy" />
                 </a>
               );
