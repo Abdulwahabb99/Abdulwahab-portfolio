@@ -88,7 +88,8 @@ export const portfolioProjects = [
     colClass: "col-md-6",
     itemVariant: "portfolio-half",
     aos: "fade-right",
-    imageUrl: u("photo-1488521787991-6bb54244544f"),
+    imageUrl:
+      "https://www.kkf.org.sa/assets/images/kkf-logo.png",
     imageAlt: "King Khalid Foundation enterprise platform",
     title: "King Khalid Foundation — Enterprise Non-Profit Platform",
     description:
