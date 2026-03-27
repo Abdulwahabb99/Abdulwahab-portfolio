@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Swft OP fintech demo project cover">
+  <defs>
+    <linearGradient id="swft-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#swft-bg)"/>
+  <rect x="80" y="580" width="240" height="120" rx="8" fill="#fbbf24" opacity="0.2"/>
+  <rect x="360" y="580" width="760" height="120" rx="8" fill="#38bdf8" opacity="0.12"/>
+  <text x="80" y="180" fill="#f1f5f9" font-family="system-ui,Segoe UI,sans-serif" font-size="52" font-weight="700">Swft OP</text>
+  <text x="80" y="248" fill="#94a3b8" font-family="system-ui,Segoe UI,sans-serif" font-size="28" font-weight="500">Fintech product demo · Charts &amp; workflows</text>
+</svg>

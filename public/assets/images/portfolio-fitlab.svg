@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="FitLab Middle East project cover">
+  <defs>
+    <linearGradient id="fitlab-bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#fitlab-bg)"/>
+  <circle cx="980" cy="160" r="120" fill="#4ade80" opacity="0.15"/>
+  <text x="80" y="180" fill="#ecfdf5" font-family="system-ui,Segoe UI,sans-serif" font-size="56" font-weight="700">FitLab</text>
+  <text x="80" y="250" fill="#86efac" font-family="system-ui,Segoe UI,sans-serif" font-size="28" font-weight="500">Middle East · Wellness platform</text>
+</svg>

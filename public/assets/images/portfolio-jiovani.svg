@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Jiovani e-commerce project cover">
+  <defs>
+    <linearGradient id="jiovani-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#jiovani-bg)"/>
+  <rect x="80" y="520" width="1040" height="4" fill="#38bdf8" opacity="0.6"/>
+  <text x="80" y="180" fill="#f8fafc" font-family="system-ui,Segoe UI,sans-serif" font-size="56" font-weight="700">Jiovani</text>
+  <text x="80" y="250" fill="#94a3b8" font-family="system-ui,Segoe UI,sans-serif" font-size="28" font-weight="500">E-commerce · React.js</text>
+</svg>

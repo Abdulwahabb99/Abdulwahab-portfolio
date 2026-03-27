@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="ZR3i AgriTech SaaS cover">
+  <defs>
+    <linearGradient id="zr3i-bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#zr3i-bg)"/>
+  <circle cx="220" cy="620" r="180" fill="#22c55e" opacity="0.12"/>
+  <circle cx="1000" cy="200" r="140" fill="#38bdf8" opacity="0.1"/>
+  <text x="80" y="180" fill="#ecfccb" font-family="system-ui,Segoe UI,sans-serif" font-size="56" font-weight="700">ZR3i</text>
+  <text x="80" y="250" fill="#a3e635" font-family="system-ui,Segoe UI,sans-serif" font-size="28" font-weight="500">Climate &amp; AgriTech SaaS · Next.js</text>
+</svg>

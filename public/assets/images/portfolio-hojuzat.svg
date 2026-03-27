@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Hojuzat travel booking project cover">
+  <defs>
+    <linearGradient id="hojuzat-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#hojuzat-bg)"/>
+  <path d="M0 480 Q300 400 600 480 T1200 460 V800 H0 Z" fill="#7dd3fc" opacity="0.12"/>
+  <text x="80" y="180" fill="#f0f9ff" font-family="system-ui,Segoe UI,sans-serif" font-size="56" font-weight="700">Hojuzat</text>
+  <text x="80" y="250" fill="#bae6fd" font-family="system-ui,Segoe UI,sans-serif" font-size="28" font-weight="500">Travel booking · Next.js</text>
+</svg>
