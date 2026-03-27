@@ -18,7 +18,7 @@ export default function About() {
                         an even <span>better story</span></h1>
                 </div>
                 <p className="scroll-animation" data-aos='fade-up'>I am a Frontend Engineer with 4+ years of experience shipping scalable web applications with React.js and Next.js. My work spans fintech dashboards and demos, SaaS and manufacturing operations UIs, edtech platforms, and design-system-driven interfaces where consistency and performance matter.</p>
-                <p className="scroll-animation" data-aos='fade-up'>I collaborate closely with product, design, and backend teams, integrate RESTful APIs, and care about accessible, responsive experiences across devices. Strengths I bring to every team include problem solving, communication, teamwork, adaptability, and time management. Based in Mansoura, Egypt; military service completed.</p>
+                <p className="scroll-animation" data-aos='fade-up'>I collaborate closely with product, design, and backend teams, integrate RESTful APIs, and care about accessible, responsive experiences across devices. Strengths I bring to every team include problem solving, communication, teamwork, adaptability, and time management. Based in Cairo, Egypt; military service completed.</p>
             </div>
         </div>
     </section>
