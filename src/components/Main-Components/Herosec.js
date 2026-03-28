@@ -47,7 +47,7 @@ export default function Herosec() {
               </p>
             </div>
             <div className="right scroll-animation" data-aos="fade-left">
-              <h1>8</h1>
+              <h1>12</h1>
               <p>
                 Featured products <br />& platforms
               </p>
