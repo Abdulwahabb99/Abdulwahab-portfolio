@@ -2,10 +2,85 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+/** Brand icons via Simple Icons CDN — [slug, hex color without #] */
+const icon = (slug, color) =>
+  `https://cdn.simpleicons.org/${slug}/${color}`;
+
+const ADVANTAGES = [
+  {
+    name: "React.js",
+    aos: "fade-right",
+    icons: [[ "react", "61DAFB" ]],
+  },
+  {
+    name: "Next.js",
+    aos: "fade-up",
+    icons: [[ "nextdotjs", "FFFFFF" ]],
+  },
+  {
+    name: "TypeScript",
+    aos: "fade-down",
+    icons: [[ "typescript", "3178C6" ]],
+  },
+  {
+    name: "JavaScript (ES6+)",
+    aos: "fade-left",
+    icons: [[ "javascript", "F7DF1E" ]],
+  },
+  {
+    name: "Redux",
+    aos: "fade-right",
+    icons: [[ "redux", "764ABC" ]],
+  },
+  {
+    name: "React Query",
+    aos: "fade-up",
+    icons: [[ "reactquery", "FF4154" ]],
+  },
+  {
+    name: "Material-UI (MUI)",
+    aos: "fade-down",
+    icons: [[ "mui", "007FFF" ]],
+  },
+  {
+    name: "Chakra UI",
+    aos: "fade-left",
+    icons: [[ "chakraui", "319795" ]],
+  },
+  {
+    name: "Bootstrap",
+    aos: "fade-right",
+    icons: [[ "bootstrap", "7952B3" ]],
+  },
+  {
+    name: "Design systems",
+    aos: "fade-up",
+    icons: [[ "storybook", "FF4785" ]],
+  },
+  {
+    name: "HTML5 & CSS3",
+    aos: "fade-down",
+    icons: [
+      [ "html5", "E34F26" ],
+      [ "css", "1572B6" ],
+    ],
+  },
+  {
+    name: "REST APIs · Git · Agile",
+    aos: "fade-left",
+    icons: [
+      [ "axios", "5A29E4" ],
+      [ "git", "F05032" ],
+      [ "jira", "0052CC" ],
+    ],
+  },
+];
+
 export default function Skills() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
   return (
     <section className="skills-area page-section scroll-to-page" id="skills">
       <div className="custom-container">
@@ -20,126 +95,40 @@ export default function Skills() {
           </div>
 
           <div className="row skills text-center">
-            <div className="col-md-3 scroll-animation" data-aos="fade-right">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i className="lab la-react" style={{ fontSize: "48px" }}></i>
-                  <h1 className="percent">—</h1>
+            {ADVANTAGES.map((item) => (
+              <div
+                key={item.name}
+                className="col-md-3 scroll-animation"
+                data-aos={item.aos}
+              >
+                <div className="skill">
+                  <div className="skill-inner">
+                    {item.icons.length === 1 ? (
+                      <img
+                        className="skill-brand-icon"
+                        src={icon(item.icons[0][0], item.icons[0][1])}
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div className="skill-brand-icons">
+                        {item.icons.map(([slug, color]) => (
+                          <img
+                            key={slug}
+                            src={icon(slug, color)}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  <p className="name">{item.name}</p>
                 </div>
-                <p className="name">React.js</p>
               </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-up">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i
-                    className="las la-layer-group"
-                    style={{ fontSize: "48px" }}
-                  ></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">Next.js</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-down">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i className="lab la-js" style={{ fontSize: "48px" }}></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">TypeScript</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-left">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i className="las la-code" style={{ fontSize: "48px" }}></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">JavaScript (ES6+)</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-right">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i
-                    className="las la-project-diagram"
-                    style={{ fontSize: "48px" }}
-                  ></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">Redux</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-up">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i className="las la-sync" style={{ fontSize: "48px" }}></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">React Query</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-down">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i
-                    className="las la-palette"
-                    style={{ fontSize: "48px" }}
-                  ></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">Material-UI (MUI)</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-left">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i className="las la-icons" style={{ fontSize: "48px" }}></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">Chakra UI</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-right">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i
-                    className="lab la-bootstrap"
-                    style={{ fontSize: "48px" }}
-                  ></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">Bootstrap</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-up">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i className="las la-drafting-compass" style={{ fontSize: "48px" }}></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">Design systems</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-down">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i className="lab la-html5" style={{ fontSize: "48px" }}></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">HTML5 &amp; CSS3</p>
-              </div>
-            </div>
-            <div className="col-md-3 scroll-animation" data-aos="fade-left">
-              <div className="skill">
-                <div className="skill-inner">
-                  <i className="lab la-git" style={{ fontSize: "48px" }}></i>
-                  <h1 className="percent">—</h1>
-                </div>
-                <p className="name">REST APIs · Git · Agile</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

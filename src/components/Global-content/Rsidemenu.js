@@ -68,7 +68,7 @@ export default function Rsidemenu() {
             <ul className="social-links d-flex align-items-center">
               <li>
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/abdulwahab-mahmoud-6b3066192/"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="LinkedIn"
@@ -78,7 +78,7 @@ export default function Rsidemenu() {
               </li>
               <li>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/Abdulwahabb99"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="GitHub"

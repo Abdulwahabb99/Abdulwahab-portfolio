@@ -13,7 +13,7 @@ export default function Lsb() {
       <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
         <li>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/abdulwahab-mahmoud-6b3066192/"
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
@@ -23,7 +23,7 @@ export default function Lsb() {
         </li>
         <li>
           <a
-            href="https://github.com/"
+            href="https://github.com/Abdulwahabb99"
             target="_blank"
             rel="noopener noreferrer"
             title="GitHub"

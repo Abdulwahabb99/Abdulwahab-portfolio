@@ -1039,11 +1039,32 @@ body .body-overlay {
 .skills .skill:hover .skill-inner {
   border-color: var(--primary_color);
 }
-.skills .skill .skill-inner img,
 .skills .skill .skill-inner i {
   display: block;
   margin: auto auto 29px auto;
   color: #ffffff;
+}
+.skills .skill .skill-inner img.skill-brand-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 29px auto;
+}
+.skills .skill .skill-inner .skill-brand-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 0 auto 29px auto;
+}
+.skills .skill .skill-inner .skill-brand-icons img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
 }
 .skills .skill .skill-inner h1 {
   font-size: 30px;
