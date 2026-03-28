@@ -125,6 +125,47 @@
 }
 
 @media (max-width: 767px) {
+    /* Mobile-only: profile card fits viewport, no horizontal clip */
+    .left-sidebar {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: max(16px, env(safe-area-inset-left));
+        padding-right: max(16px, env(safe-area-inset-right));
+    }
+    .left-sidebar > img.me {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    main.drake-main {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    main.drake-main #smooth-wrapper,
+    main.drake-main #smooth-content {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .left-sidebar .designation-badge {
+        font-size: 11px;
+        padding: 8px 14px;
+        letter-spacing: 0.3px;
+        max-width: 100%;
+        text-align: center;
+        white-space: normal;
+        line-height: 1.35;
+    }
+    .left-sidebar h2 {
+        font-size: clamp(16px, 4.5vw, 22px);
+    }
     .icon-menu {
         right: 30px;
         top: 30px;

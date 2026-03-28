@@ -663,6 +663,7 @@ main.drake-main {
 .left-sidebar {
   max-width: 485px;
   width: 100%;
+  box-sizing: border-box;
   border-radius: 30px;
   border: 1px solid #565656;
   position: fixed;
@@ -679,6 +680,8 @@ main.drake-main {
   border-radius: 30px;
   display: block;
   margin-bottom: 24px;
+  max-width: 100%;
+  height: auto;
 }
 .left-sidebar .designation-wrap {
   text-align: center;
