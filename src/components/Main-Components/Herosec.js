@@ -25,7 +25,8 @@ export default function Herosec() {
           </div>
           <p className="scroll-animation" data-aos="fade-up">
             Senior Frontend Engineer with 4+ years of experience building
-            scalable web applications using Next.js and modern frontend stacks.
+            scalable web applications using React.js, Next.js, and modern
+            frontend stacks.
             Skilled in developing fintech platforms, implementing design
             systems, and delivering high-performance user interfaces.
           </p>
