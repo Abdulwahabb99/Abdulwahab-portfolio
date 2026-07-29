@@ -91,25 +91,6 @@ export const portfolioProjects = [
     projectUrl: "https://hojuzat.com/ar",
   },
   {
-    id: "golden-host",
-    colClass: "col-md-6",
-    itemVariant: "portfolio-half",
-    aos: "fade-right",
-    imageUrl: u("photo-1600596542815-ffad4c1539a9"),
-    imageAlt: "Golden Host property rental marketplace",
-    title: "Golden Host — Property Rental Marketplace",
-    description:
-      "Marketplace for booking private accommodations—apartments, villas, and chalets—across Saudi Arabia, with advanced search and filtering and a responsive UI focused on browsing and booking.",
-    tags: [
-      "Next.js",
-      "Tailwind CSS",
-      "React Query",
-      "React Hook Form",
-      "REST APIs",
-    ],
-    projectUrl: "https://goldenhost.co",
-  },
-  {
     id: "cardnet",
     colClass: "col-md-6",
     itemVariant: "portfolio-half",
